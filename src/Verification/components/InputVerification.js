@@ -17,7 +17,7 @@ const InputVerification = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/verify', {
+      const response = await fetch('REACT_APP_API_URL=https://verification-backend.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
