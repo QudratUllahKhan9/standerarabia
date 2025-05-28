@@ -1,0 +1,131 @@
+.inspection-container {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.inspection-header {
+  margin-bottom: 40px;
+}
+
+.inspection-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.inspection-subtitle {
+  font-size: 20px;
+  color: #888;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin-bottom:7%;
+}
+
+.service-card {
+  background-color: #005b94;
+  margin-bottom: 10vh;
+  width: 240px;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: visible; /* Allow overlap */
+  position: relative; /* Make child elements use this as reference */
+  padding-top: 120px; /* Give space for the overlapping header */
+}
+
+.service-header {
+  background-color: #4a4a4a;
+  padding: 20px 50px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+
+  position: absolute;
+  top: -40px; /* Shift it upward */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
+.service-image-wrapper {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ margin-bottom: 10vh;
+
+}
+
+.service-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.services-subtitle{
+  font-size: 16px;
+  color: #0C598F;
+  font-weight:normal;
+}
+.services-title{
+  font-size: 46px;
+  color: #0C598F;
+}
+.services-container{
+  padding: 40px;
+}
+.see-all-btn {
+  background-color: #0066b2;
+  color: white;
+  padding: 18px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+  margin-bottom: 8%;
+  /* height: 10vh; */
+  
+}
+
+.see-all-btn:hover {
+  background-color: #525353;
+}
+
+.arrow {
+  /* font-size: 18px; */
+}
+/* Variant Backgrounds for Cards */
+.blue-card {
+  background-color: #005b94;
+}
+
+.gray-card {
+  background-color: #4a4a4a;
+}
+
+/* Variant Backgrounds for Headers */
+.gray-header {
+  background-color: #4a4a4a;
+}
+
+.blue-header {
+  background-color: #005b94;
+}

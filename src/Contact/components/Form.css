@@ -1,0 +1,164 @@
+.contact-page {
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.send-btn {
+  background-color: #004a98;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-text-size {
+  max-width: 100%;
+}
+
+.contact-text .intro {
+  font-size: 0.75rem;
+  color: #004a98;
+  margin-bottom: 0.5rem;
+}
+
+.contact-text h3 {
+  color: #004a98;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Info Boxes */
+.info-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 260px;
+  background: #10599c;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.give-us-text {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.info-box .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Recaptcha styling */
+.recaptcha-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-text {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .contact-text h3 {
+    font-size: 2rem;
+  }
+
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 2rem 1rem;
+  }
+
+  .contact-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .give-us-text {
+    font-size: 18px;
+  }
+
+  .info-box {
+    padding: 1rem;
+  }
+
+  .info-box i {
+    font-size: 20px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}

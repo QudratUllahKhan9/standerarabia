@@ -1,0 +1,163 @@
+.header {
+  background-color: #F8F8F8;
+  color: #333;
+  padding: 1.5rem;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Remove 'px' from z-index value */
+  background-color: white;
+  /* Ensure background covers content when sticky */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); Optional: add shadow when sticky */
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  width: 27%;
+  /* Fixed width for logo */
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.vision-logo {
+  width: 80px;
+  /* Adjust based on your image */
+  height: auto;
+  gap: 75rem;
+}
+
+.menu-logo {
+
+  width: 25px;
+  /* Adjust based on your image */
+  height: auto;
+}
+
+
+.navigation {
+  display: flex;
+  gap: 3rem;
+  /* background-color: #e74c3c; */
+}
+
+.nav-item {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  color: black;
+  /* cursor: pointer; */
+  /* position: relative; */
+  font-size: 1.1rem;
+
+}
+
+.nav-item-ver {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  color: black;
+  /* cursor: pointer; */
+  /* position: relative; */
+  font-size: 1.1rem;
+
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-item-ver:hover {
+  color: white;
+}
+.nav-item:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -0.75rem;
+  color: #ddd;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: inherit;
+  font-family: inherit;
+}
+.nav-item-ver{
+    background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.nav-item-icon {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.nav-item:hover {
+  background-color: #0C598F;
+ border-radius: 30px;
+  padding: 20px;
+}
+.nav-item-ver:hover {
+  background-color: #0C598F;
+ border-radius: 30px;
+  padding: 20px;
+}
+
+.unstyled-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+/* Hide all right-section children except the last one (breadcrumb/menu icon) on small screens */
+@media (max-width: 768px) {
+  .right-section > *:not(:last-child) {
+    display: none;
+  }
+
+  /* Make sure the logo-container is visible */
+  .logo-container {
+    display: block;
+  }
+
+  /* Optionally adjust spacing */
+  .header-top {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

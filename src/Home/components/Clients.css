@@ -1,0 +1,39 @@
+.clients-section {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.clients-subtitle {
+  color: #005699;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.clients-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.client-logo img {
+  max-height: 60px;
+  max-width: 140px;
+  filter: grayscale(40%);
+  transition: transform 0.3s ease;
+}
+
+.client-logo img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}

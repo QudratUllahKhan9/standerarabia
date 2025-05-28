@@ -1,0 +1,73 @@
+.verification-btn {
+  margin-top:0px;
+  padding: 20px;
+  width: 90%;
+  background-color: #004080;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Blinking animation for the text inside the button */
+.blinkText {
+  animation: blinkText 3s infinite;
+  font-size:medium;
+}
+
+@keyframes blinkText {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+ .icon-box {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: #0C598F;
+        
+            cursor: pointer;
+            margin: 20px;
+            transition: background-color 0.6s ease;
+          }
+
+          .icon-box::before,
+          .icon-box::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            transition: all 0.6s ease;
+          }
+
+          /* Cross (X) style - smaller */
+          .cross::before {
+            width: 2px;
+            height: 16px;
+            top: 12px;
+            left: 19px;
+            transform: rotate(45deg);
+          }
+          .cross::after {
+            width: 2px;
+            height: 16px;
+            top: 12px;
+            left: 19px;
+            transform: rotate(-45deg);
+          }
+
+          /* Plus (+) style - smaller */
+          .plus::before {
+            width: 2px;
+            height: 16px;
+            top: 12px;
+            left: 19px;
+            transform: rotate(0deg);
+          }
+          .plus::after {
+            width: 16px;
+            height: 2px;
+            top: 19px;
+            left: 12px;
+            transform: rotate(0deg);
+          }
