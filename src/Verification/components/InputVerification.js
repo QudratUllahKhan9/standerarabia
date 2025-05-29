@@ -5,8 +5,12 @@ const InputVerification = () => {
   const [inputValue, setInputValue] = useState('');
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
-
 const handleVerify = async () => {
+  if (!inputValue.trim()) {
+    setError('Please enter a certificate number');
+    return;
+  }
+
   try {
     const response = await fetch('https://standerbackend.vercel.app/api/verify', {
       method: 'POST',
@@ -14,7 +18,7 @@ const handleVerify = async () => {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify({ query: inputValue }) // <== Use state
+      body: JSON.stringify({ query: inputValue }) // ✅ make sure it's NOT hardcoded
     });
 
     if (!response.ok) {
@@ -30,7 +34,6 @@ const handleVerify = async () => {
     setError(err.message || 'Failed to connect to the server. Please try again later.');
   }
 };
-
 
   return (
     <div className="verify-wrapper">
