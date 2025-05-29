@@ -14,7 +14,7 @@ const InputVerification = () => {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify({ query: "TEST123" })
+      body: JSON.stringify({ query: "SA-TNG-164178" })
     });
 
     if (!response.ok) {
