@@ -10,9 +10,9 @@ const InputVerification = () => {
   try {
     const response = await fetch('https://standerbackend.vercel.app/api/verify', {
       method: 'POST',
-      mode: 'cors', // Explicitly enable CORS
       headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify({ query: inputValue.trim() }),
     });
@@ -27,7 +27,7 @@ const InputVerification = () => {
     setError('');
   } catch (err) {
     console.error('Error:', err);
-    setError(err.message || 'Failed to connect to the server');
+    setError(err.message || 'Failed to connect to the server. Please try again later.');
   }
 };
 
