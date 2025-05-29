@@ -17,7 +17,7 @@ const InputVerification = () => {
     }
 
     try {
-      const response = await fetch('https://standerbackend.vercel.app/verify', {
+      const response = await fetch('https://standerbackend.vercel.app/api/verify', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
