@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Verification.css';
 
+
 const InputVerification = () => {
   const [inputValue, setInputValue] = useState('');
   const [result, setResult] = useState(null);
