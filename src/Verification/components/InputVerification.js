@@ -7,37 +7,30 @@ const InputVerification = () => {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
-  const handleVerify = async () => {
-    const trimmedInput = inputValue.trim();
-    setResult(null);
-    setError('');
+const handleVerify = async () => {
+  try {
+    const response = await fetch('https://standerbackend.vercel.app/api/verify', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query: inputValue.trim() }),
+    });
 
-    if (trimmedInput === '') {
-      setError('Please enter a certificate number or ID.');
-      return;
+    console.log('Response status:', response.status); // Add this
+    const data = await response.json();
+    console.log('Full response:', data); // Add this
+
+    if (!response.ok) {
+      setError(data.error || 'Verification failed');
+    } else {
+      setResult(data.data);
     }
-
-    try {
-      const response = await fetch('https://standerbackend.vercel.app/api/verify', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ query: trimmedInput }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        setError(data.error || data.message || 'Something went wrong.');
-      } else {
-        setResult(data.data);
-      }
-    } catch (err) {
-      setError('Failed to connect to the server.');
-    }
-  };
-
+  } catch (err) {
+    console.error('Full error:', err); // Add this
+    setError('Failed to connect to the server. Please try again later.');
+  }
+};
   return (
     <div className="verify-wrapper">
       <div className="verify-box">
