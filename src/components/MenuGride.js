@@ -47,27 +47,21 @@ const MenuGride = () => {
 
   return (
     <div style={styles.app}>
-   <div style={{ position: 'fixed',
-    top: 0,
-    width: '100%',
-    height: 60,
-    display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    backgroundColor: 'white', // or whatever you want
-    zIndex: 1000}}>
- <div
-  className={`icon-box ${hovered ? 'plus' : 'cross'}`}
-  onMouseEnter={() => setHovered(true)}
-  onMouseLeave={() => setHovered(false)}
-  onClick={() => navigate('/')}
-  style={{ cursor: 'pointer', marginRight: '20px' }} // Add visual cue
-/>
+ 
 
-       
+       <div className="top-navbar">
+  <div
+    className={`icon-box ${hovered ? 'plus' : 'cross'}`}
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    onClick={() => navigate('/')}
+    style={{ cursor: 'pointer' }}
+  />
 </div>
+
    <div style={{display:'flex'}}>
-      <div style={styles.sidebar}>
+      <div className="responsive-sidebar" style={styles.sidebar}>
+
         <img src={logo} alt="Logo" style={styles.logo} />
         <ul style={styles.menu}>
           <li style={styles.menuItem}>Home</li>
@@ -80,7 +74,7 @@ const MenuGride = () => {
         <button className='verification-btn'><p className='blinkText'>VERIFICATION</p></button>
       </div>
 
-      <div style={styles.grid}>
+      <div className="grid" style={styles.grid}>
         
         {services.map((service, i) => (
           <div key={i} style={styles.card}>
