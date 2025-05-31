@@ -76,16 +76,17 @@ const handleVerify = async () => {
                   <th>Expiry Date</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>{result.name}</td>
-                  <td>{result.iqama}</td>
-                  <td>{result.course}</td>
-                  <td>{result.cardNo}</td>
-                  <td>{result.issued}</td>
-                  <td>{result.expiry}</td>
-                </tr>
-              </tbody>
+            <tbody>
+  <tr>
+    <td data-label="Name">{result.name}</td>
+    <td data-label="IqamaNo/ID">{result.iqama}</td>
+    <td data-label="Course Name">{result.course}</td>
+    <td data-label="Card No">{result.cardNo}</td>
+    <td data-label="Issued Date">{result.issued}</td>
+    <td data-label="Expiry Date">{result.expiry}</td>
+  </tr>
+</tbody>
+
             </table>
           </>
         )}
