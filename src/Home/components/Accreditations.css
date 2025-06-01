@@ -1,3 +1,4 @@
+
 .accreditations-section {
   display: flex;
   flex-wrap: wrap;
@@ -50,4 +51,19 @@
 }
 .text-style{
   font-size: 50px;
+}
+@media (max-width: 600px) {
+  .accreditations-left h3 {
+    font-size: 1.8rem;
+  }
+
+  .accreditations-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .accreditation-item {
+    height: 90px;
+    padding: 8px;
+  }
 }

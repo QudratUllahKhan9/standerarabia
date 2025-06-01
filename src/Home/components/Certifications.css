@@ -1,3 +1,4 @@
+
 .certifications-section {
   background-color: #3a3a3a;
   padding: 60px 20px;
@@ -23,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 5%;
 }
 
 .certificate-card {

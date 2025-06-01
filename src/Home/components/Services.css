@@ -129,3 +129,48 @@
 .blue-header {
   background-color: #005b94;
 }
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px;
+  }
+
+  .services-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .services-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .service-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 130px; /* adjusted for larger header */
+  }
+
+  .service-header {
+    font-size: 18px;
+    width: 95%;
+    padding: 5vh 36px;
+    top: -40px;
+  }
+
+  .service-image {
+    width: 220px;     /* 🔼 Increased from 180px */
+    height: 220px;    /* 🔼 Increased from 180px */
+  }
+
+  .see-all-btn {
+    padding: 14px 20px;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}

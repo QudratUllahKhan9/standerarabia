@@ -1,16 +1,29 @@
 import React from "react";
 import "./Services.css";
-import Third from '../../components/assets/Third-Party-Inspection.webp';
+import Third from '../../components/assets/third-party-inspection2.webp';
+import lifting from '../../components/assets/lifting-equipment-inspection 2.webp';
+import safety from '../../components/assets/safety-training2.webp';
+import Operator from '../../components/assets/Operator-Certification-Program2.webp';
+import advanced from '../../components/assets/advanced-conventional-ndt2.webp';
+import marine from '../../components/assets/marine-inspection-services.webp';
+import calibration from '../../components/assets/calibration (1).webp';
+import material from '../../components/assets/material-testing-laboratory.webp';
+
+
+
+
+
+
 
 const services = [
   { title: "THIRD PARTY INSPECTION", image: Third },
-  { title: "LIFTING EQUIPMENT INSPECTION", image: Third },
-  { title: "SAFETY TRAINING SERVICES", image: Third },
-  { title: "OPERATOR TRAINING & ASSESSMENT", image: Third },
-  { title: "ADVANCED & CONVENTIONAL NDT", image: Third },
-  { title: "MARINE INSPECTION SERVICES", image: Third },
-  { title: "CALIBRATION & REPAIR SERVICES", image: Third },
-  { title: "MATERIAL TESTING LABORATORY", image: Third },
+  { title: "LIFTING EQUIPMENT INSPECTION", image: lifting },
+  { title: "SAFETY TRAINING SERVICES", image: safety },
+  { title: "OPERATOR TRAINING & ASSESSMENT", image: Operator },
+  { title: "ADVANCED & CONVENTIONAL NDT", image: advanced },
+  { title: "MARINE INSPECTION SERVICES", image: marine },
+  { title: "CALIBRATION & REPAIR SERVICES", image: calibration },
+  { title: "MATERIAL TESTING LABORATORY", image: material },
 ];
 
 // ⬇️ Card Component with alternating color support

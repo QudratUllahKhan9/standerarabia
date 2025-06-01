@@ -59,7 +59,7 @@ const Form = () => {
           </div>
 
 
-          <button className="send-btn" disabled={!captchaValue}>
+          <button className="send-btn">
             Send Message
           </button>
         </div>

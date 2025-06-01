@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem;
-  background-color: #fff;
+  background-color: #ffffff;
   flex-wrap: wrap;
 }
 
@@ -55,8 +55,77 @@
 
 .hero-img-single {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
+
+.arrow-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.arrow-btn {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.8cqw;
+  font-weight: bold;
+  border: 2px solid #4b4b4b;
+  background-color: #4b4b4b;
+  color: #4b4b4b;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left-arrow{
+  color: #fff;
+}
+
+.right-arrow{
+  color: #fff;
+}
+
+.arrow-btn:hover {
+  background-color:white;
+  color: black;
+  border: none;
+
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  /* Change the order so image comes first */
+  .hero-single-image {
+    order: -1;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem; /* add spacing after image */
+  }
+
+  .hero-text {
+    order: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons {
+    order: 1;
+    justify-content: center;
+  }
+
+  .hero-img-single {
+    max-width: 100%;
+  }
+}
+

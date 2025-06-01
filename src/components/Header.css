@@ -1,3 +1,4 @@
+
 .header {
   background-color: #F8F8F8;
   color: #333;
@@ -53,9 +54,15 @@
 
 
 .navigation {
+
   display: flex;
-  gap: 3rem;
+  /* gap: 2rem; */
+  height: 10vh;
+  width: 50vh;
   /* background-color: #e74c3c; */
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
 }
 
 .nav-item {
@@ -71,7 +78,7 @@
 .nav-item-ver {
   padding: 0.5rem 2rem;
   font-weight: bold;
-  color: black;
+  color: red;
   /* cursor: pointer; */
   /* position: relative; */
   font-size: 1.1rem;
@@ -100,6 +107,8 @@
   padding: 8px 16px;
   color: inherit;
   font-family: inherit;
+
+
 }
 .nav-item-ver{
     background: none;
@@ -107,7 +116,9 @@
   font-size: 16px;
   cursor: pointer;
   padding: 8px 16px;
-  color: inherit;
+  color: red;
+
+
   font-family: inherit;
 }
 
@@ -122,12 +133,12 @@
 }
 
 .nav-item:hover {
-  background-color: #0C598F;
+  background-color: #525353;
  border-radius: 30px;
   padding: 20px;
 }
 .nav-item-ver:hover {
-  background-color: #0C598F;
+  background-color: #525353;
  border-radius: 30px;
   padding: 20px;
 }

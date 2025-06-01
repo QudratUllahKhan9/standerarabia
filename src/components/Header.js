@@ -24,7 +24,7 @@ const Header = () => {
               Contact Us
             </button>
             <button className="nav-item-ver" style={{ }} onClick={() => navigate('/verification')}>
-              Verification
+              verification
             </button>
           </div>
           <button className="nav-item-icon" onClick={() => navigate('/MenuGride')}> 

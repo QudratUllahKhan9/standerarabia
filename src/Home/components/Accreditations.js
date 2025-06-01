@@ -8,22 +8,22 @@ import accred3 from '../assets/acceretion-18.webp';
 import accred4 from '../assets/acceretion-11.webp';
 import accred5 from '../assets/acceretion-20 (1).webp';
 import accred6 from '../assets/acceretion-16.webp'; 
-import accred7 from '../assets/acceretion-11.webp';
-import accred8 from '../assets/acceretion-11.webp';
-import accred9 from '../assets/acceretion-11.webp';
-import accred10 from '../assets/acceretion-11.webp';
-import accred11 from '../assets/acceretion-11.webp';
-import accred12 from '../assets/acceretion-11.webp';
-import accred13 from '../assets/acceretion-11.webp';
-import accred14 from '../assets/acceretion-11.webp';
-import accred15 from '../assets/acceretion-11.webp';
-import accred16 from '../assets/acceretion-11.webp';
-import accred17 from '../assets/acceretion-11.webp';
-import accred18 from '../assets/acceretion-11.webp';
-import accred19 from '../assets/acceretion-11.webp';
-import accred20 from '../assets/acceretion-11.webp';
-import accred21 from '../assets/acceretion-11.webp';
-import accred22 from '../assets/acceretion-11.webp';
+import accred7 from '../assets/acceretion-9.webp';
+import accred8 from '../assets/acceretion-3.webp';
+import accred9 from '../assets/acceretion-17.webp';
+import accred10 from '../assets/acceretion-10.webp';
+import accred11 from '../assets/acceretion-15.webp';
+import accred12 from '../assets/acceretion-2.webp';
+import accred13 from '../assets/acceretion-19.webp';
+import accred14 from '../assets/acceretion-12.webp';
+import accred15 from '../assets/acceretion-13.webp';
+import accred16 from '../assets/acceretion-7.webp';
+import accred17 from '../assets/acceretion-6.webp';
+import accred18 from '../assets/acceretion-1.webp';
+import accred19 from '../assets/acceretion-4.webp';
+import accred20 from '../assets/acceretion-22.webp';
+import accred21 from '../assets/acceretion-23.webp';
+// import accred22 from '../assets/acceretion-11.webp';
 
 
 
@@ -51,7 +51,7 @@ const accreditationLogos = [
   { img: accred19 },
   { img: accred20 },
   { img: accred21 },
-  { img: accred22 },
+  // { img: accred22 },
 
 ];
 const Accreditations = () => {

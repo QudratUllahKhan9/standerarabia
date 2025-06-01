@@ -1,3 +1,4 @@
+
 .footer {
   background-color: #0A1229;
   color: #ffffff;
@@ -121,12 +122,17 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
+    /* background-color: violet; */
+  background-color: #0A1229;
+
+    height: 200vh;
   }
 
   .footer-logo,
   .footer-links,
   .footer-contact {
     width: 100%;
+
     align-items: center;
   }
 
@@ -142,31 +148,7 @@
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
-  }
-}
+  background-color: #0A1229;
 
-@media (max-width: 576px) {
-  .footer-logo-img {
-    width: 70%;
-  }
-
-  .footer-links li,
-  .footer-contact p {
-    font-size: 13px;
-  }
-
-  .footer-socials a {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .Contact-Us-Text {
-    font-size: 16px;
-  }
-
-  .set-contact {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 }

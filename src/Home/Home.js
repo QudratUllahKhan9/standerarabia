@@ -16,7 +16,7 @@ import Clients from './components/Clients';
 
 function Home() {
   return (
-    <div className="app">
+    <div style={{backgroundColor:'#F6F6F6',}} className="app">
       <Header/>
       <main style={{backgroundColor:'#FFFFFF',flex:1}}>
         <BodyHeader/>
