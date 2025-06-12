@@ -17,6 +17,7 @@ import AllServices from './assets/all-services.webp';
 
 
 
+// import { useNavigate } from 'react-router-dom';
 
 
 
@@ -45,6 +46,8 @@ const MenuGride = () => {
   const [hovered, setHovered] = useState(false);
   const navigate = useNavigate();
 
+
+  
   return (
     <div style={styles.app}>
  
@@ -62,16 +65,16 @@ const MenuGride = () => {
    <div style={{display:'flex'}}>
       <div className="responsive-sidebar" style={styles.sidebar}>
 
-        <img src={logo} alt="Logo" style={styles.logo} />
+        <img src={logo} alt="Logo"  className='logo-image' />
         <ul style={styles.menu}>
-          <li style={styles.menuItem}>Home</li>
+          <li  onClick={() => navigate('/')} style={styles.menuItem}>Home</li>
           <li style={styles.menuItem}>About</li>
           <li style={styles.menuItem}>Services</li>
           <li style={styles.menuItem}>Accreditations</li>
           <li style={styles.menuItem}>News & Feeds</li>
-          <li style={styles.menuItem}>Contact</li>
+          <li onClick={() => navigate('/contact')} style={styles.menuItem}>Contact</li>
         </ul>
-        <button className='verification-btn'><p className='blinkText'>VERIFICATION</p></button>
+        <button  onClick={() => navigate('/verification')} className='verification-btn'><p className='blinkText'>VERIFICATION</p></button>
       </div>
 
       <div className="grid" style={styles.grid}>

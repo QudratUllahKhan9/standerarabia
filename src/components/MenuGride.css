@@ -17,6 +17,10 @@
   font-size:medium;
 }
 
+  .logo-image{
+    width: 70%;
+  }
+
 /* Hide sidebar by default */
 .responsive-sidebar {
   display: none;
@@ -68,6 +72,11 @@
     top: 16px !important;
     left: 11px !important;
   }
+  .logo-image{
+    width: 20vh;
+
+  }
+
 }
 
 

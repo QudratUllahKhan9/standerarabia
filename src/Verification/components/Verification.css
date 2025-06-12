@@ -99,16 +99,16 @@
   .verify-input-group {
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    /* align-items: center; */
   }
 
-  .verify-input,
-  .verify-button {
+  .verify-input {
     width: 100%;
     max-width: 100%;
   }
 
   .verify-button {
+    width: 35%;
     padding: 12px 0;
   }
 
