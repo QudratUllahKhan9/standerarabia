@@ -35,21 +35,10 @@
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero {
-    height: 35vh;
+    height: 25vh !important;
   }
 
   .hero-text {
     font-size: 8vw;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 30vh;
-  }
-
-  .hero-text {
-    font-size: 10vw;
-    padding: 6px 12px;
   }
 }

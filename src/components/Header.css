@@ -160,6 +160,11 @@
     display: none;
   }
 
+  .logo {
+  width: 33vh;
+  height: auto;
+  object-fit: contain;
+}
   /* Make sure the logo-container is visible */
   .logo-container {
     display: block;
