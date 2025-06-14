@@ -159,7 +159,11 @@
   .right-section > *:not(:last-child) {
     display: none;
   }
-
+.logo {
+  width: 30vh;
+  height: auto;
+  object-fit: contain;
+}
   /* Make sure the logo-container is visible */
   .logo-container {
     display: block;
