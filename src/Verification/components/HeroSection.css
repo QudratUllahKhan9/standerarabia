@@ -35,7 +35,7 @@
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero {
-    height: 35vh;
+    height: 25vh !important;
   }
 
   .hero-text {
