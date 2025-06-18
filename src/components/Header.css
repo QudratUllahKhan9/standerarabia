@@ -7,9 +7,13 @@
   font-family: 'Arial', sans-serif;
   position: sticky;
   top: 0;
+  position: fixed;
   z-index: 1000;
+ height: 18vh;
+ width: 100%;
+ 
   /* Remove 'px' from z-index value */
-  background-color: white;
+  /* background-color: white; */
   /* Ensure background covers content when sticky */
   /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); Optional: add shadow when sticky */
 }
@@ -35,7 +39,7 @@
 .right-section {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .vision-logo {
@@ -47,7 +51,7 @@
 
 .menu-logo {
 
-  width: 25px;
+  width: 23px;
   /* Adjust based on your image */
   height: auto;
 }
@@ -156,6 +160,10 @@
 /* Responsive adjustments */
 /* Hide all right-section children except the last one (breadcrumb/menu icon) on small screens */
 @media (max-width: 768px) {
+  .header{
+ height: 10vh;
+
+  }
   .right-section > *:not(:last-child) {
     display: none;
   }

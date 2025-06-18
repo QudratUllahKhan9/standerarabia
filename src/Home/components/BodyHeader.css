@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem;
-  background-color: #ffffff;
-  flex-wrap: wrap;
+  /* background-color:red; */
+  flex-wrap: wrap;margin-top: 10%;
 }
 
 .hero-text {
@@ -57,7 +57,7 @@
   width: 100%;
   /* max-width: 500px; */
   border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
   object-fit: cover;
 }
 

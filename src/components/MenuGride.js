@@ -68,26 +68,27 @@ const MenuGride = () => {
         <img src={logo} alt="Logo"  className='logo-image' />
         <ul style={styles.menu}>
           <li  onClick={() => navigate('/')} style={styles.menuItem}>Home</li>
-          <li style={styles.menuItem}>About</li>
-          <li style={styles.menuItem}>Services</li>
-          <li style={styles.menuItem}>Accreditations</li>
-          <li style={styles.menuItem}>News & Feeds</li>
+          <li  onClick={() => navigate('/About')} style={styles.menuItem}>About</li>
+          <li onClick={() => navigate('/Services')} style={styles.menuItem}>Services</li>
+          <li onClick={() => navigate('/Accreditations')} style={styles.menuItem}>Accreditations</li>
+          <li onClick={() => navigate('/Feedback')} style={styles.menuItem}>News & Feeds</li>
           <li onClick={() => navigate('/contact')} style={styles.menuItem}>Contact</li>
         </ul>
         <button  onClick={() => navigate('/verification')} className='verification-btn'><p className='blinkText'>VERIFICATION</p></button>
       </div>
 
       <div className="grid" style={styles.grid}>
-        
-        {services.map((service, i) => (
-          <div key={i} style={styles.card}>
-            <img src={service.image} alt={service.title} style={styles.image} />
-            <div style={styles.overlay}>
-              <span>{service.title}</span>
-            </div>
-          </div>
-        ))}
+  {services.map((service, i) => (
+    <div key={i} className="card">
+      <img src={service.image} alt={service.title} style={styles.image} />
+      <div style={styles.overlay}>
+        <span>{service.title}</span>
       </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </div>
   );

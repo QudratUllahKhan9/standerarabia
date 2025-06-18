@@ -25,6 +25,31 @@
 .responsive-sidebar {
   display: none;
 }
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 210px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  left: 50%;
+  background: #1c4672;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+.card:hover::after,
+.card:focus::after {
+  width: 100%;
+}
+
 
 /* Show sidebar only on screens less than 768px wide */
 @media (max-width: 768px) {
