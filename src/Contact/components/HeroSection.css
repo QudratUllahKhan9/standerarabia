@@ -36,17 +36,17 @@
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .hero {
-    height: 35vh;
+  .contact-hero {
+    height: 30vh !important;
     margin-bottom: 10vh;
   }
 
   .hero-text {
-    font-size: 7vw;
+    font-size: 10vw;
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .hero {
     height: 30vh;
     margin-bottom: 8vh;
@@ -56,4 +56,4 @@
     font-size: 8vw;
     padding: 8px 12px;
   }
-}
+} */

@@ -65,29 +65,30 @@ const handleVerify = async () => {
 
             <h3 className="verification-badge">Verification Data</h3>
 
-            <table className="verification-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>IqamaNo/ID</th>
-                  <th>Course Name</th>
-                  <th>Card No</th>
-                  <th>Issued Date</th>
-                  <th>Expiry Date</th>
-                </tr>
-              </thead>
-            <tbody>
-  <tr>
-    <td data-label="Name">{result.name}</td>
-    <td data-label="IqamaNo/ID">{result.iqama}</td>
-    <td data-label="Course Name">{result.course}</td>
-    <td data-label="Card No">{result.cardNo}</td>
-    <td data-label="Issued Date">{result.issued}</td>
-    <td data-label="Expiry Date">{result.expiry}</td>
-  </tr>
-</tbody>
+          <table className="verification-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>IqamaNo/ID</th>
+      <th>Course Name</th>
+      <th>Card No</th>
+      <th>Issued Date</th>
+      <th>Expiry Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Name">{result.name}</td>
+      <td data-label="IqamaNo/ID">{result.iqama}</td>
+      <td data-label="Course Name">{result.course}</td>
+      <td data-label="Card No">{result.cardNo}</td>
+      <td data-label="Issued Date">{result.issued}</td>
+      <td data-label="Expiry Date">{result.expiry}</td>
+    </tr>
+  </tbody>
+</table>
 
-            </table>
+
           </>
         )}
       </div>

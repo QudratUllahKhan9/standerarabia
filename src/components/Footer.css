@@ -124,6 +124,18 @@
   
 }
 
+
+.footer-links ul li:focus,
+.footer-links ul li:hover {
+  color: #0c598f; /* Your preferred blue color */
+  outline: none;
+}
+
+
+
+
+
+
 @media (max-width: 992px) {
   .footer-container {
     flex-direction: column;

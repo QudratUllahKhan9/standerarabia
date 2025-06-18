@@ -36,7 +36,8 @@
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero {
-    height: 25vh !important;
+    height: 30vh !important;
+    margin-bottom: 10vh;
  
   }
 

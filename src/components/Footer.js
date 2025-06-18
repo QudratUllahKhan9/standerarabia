@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Training Programs</h3>
           <ul>
-            <li>IPAF Approved Training Program</li>
+            <li className='footer-test'>IPAF Approved Training Program</li>
             <li>IADC Approved Training Program</li>
             <li>OSHA Approved Training Program</li>
             <li>NEBOSH Approved Training Program</li>
