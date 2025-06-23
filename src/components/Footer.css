@@ -125,10 +125,37 @@
 }
 
 
-.footer-links ul li:focus,
-.footer-links ul li:hover {
-  color: #0c598f; /* Your preferred blue color */
+.footer-links ul li {
+  position: relative;
+  padding-left: 0px; /* space for icon */
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-links ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  transition: border-color 0.3s;
+}
+
+.footer-links ul li:hover::before,
+.footer-links ul li:focus::before {
+  border-color: white;
+}
+
+.footer-links ul li:hover,
+.footer-links ul li:focus {
+  color: #0c598f;
+  transform: translateX(4px); /* 👈 move text slightly forward */
   outline: none;
+  padding-left: 5%;
 }
 
 

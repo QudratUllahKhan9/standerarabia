@@ -1,0 +1,44 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #f4f8fb;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.team-image {
+  width: 100%;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+.text-section {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.about-label {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+
+.about-title {
+  font-size: 36px;
+  color: #005087;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}

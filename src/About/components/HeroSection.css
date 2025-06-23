@@ -1,0 +1,32 @@
+.about-hero {
+  height: 40vh;
+  background: url('../asstes/about-banner.webp') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 5vw;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}

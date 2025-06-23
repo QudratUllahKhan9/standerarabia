@@ -29,27 +29,78 @@
   position: relative;
   overflow: hidden;
   height: 210px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.card::after {
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card .overlay span {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.card::before {
   content: '';
   position: absolute;
-  height: 2px;
-  width: 0%;
-  bottom: 0;
-  left: 50%;
-  background: #1c4672;
-  transform: translateX(-50%);
-  transition: width 0.4s ease;
+  top: 30%;
+  left: -75%;
+  width: 30%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.3);
+  /* transform: rotate(-450deg); */
+  pointer-events: none;
+  transition: none;
 }
 
-.card:hover::after,
-.card:focus::after {
-  width: 100%;
+.card:hover::before,
+.card:focus::before {
+  animation: shine 0.8s ease forwards;
 }
 
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.card:hover .overlay,
+.card:focus .overlay {
+  opacity: 1;
+}
+
+.card:hover .overlay span,
+.card:focus .overlay span {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Show sidebar only on screens less than 768px wide */
 @media (max-width: 768px) {
