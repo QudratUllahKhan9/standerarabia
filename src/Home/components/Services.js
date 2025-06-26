@@ -30,7 +30,7 @@ const services = [
 const ServiceCard = ({ title, image, variant }) => {
   const isBlue = variant === "blue";
   return (
-    <div className={`service-card ${isBlue ? "blue-card" : "gray-card"}`}>
+    <div className={`service-card-home ${isBlue ? "blue-card" : "gray-card"}`}>
       <div className={`service-header ${isBlue ? "gray-header" : "blue-header"}`}>
         {title}
       </div>

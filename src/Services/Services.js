@@ -1,9 +1,19 @@
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import ServicesSection from './components/ServicesSection'
 
-export default function Services() {
+
+
+export default function About() {
   return (
     <div>
-      <h1>This is service page</h1>
+    <Header/>
+    <main>
+      {/* <HeroSection/> */}
+   <ServicesSection/>
+    </main>
+    <Footer/>
     </div>
   )
 }

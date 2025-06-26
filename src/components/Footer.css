@@ -13,7 +13,7 @@
   max-width: 1200px;
   margin: auto;
   height: 80vh;
-  margin-top: 4%;
+  /* margin-top: 4%; */
   color: #b7bbc2;
 }
 
@@ -103,11 +103,12 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 20px;
   border-top: 1px solid #3a3a3a;
   font-size: 14px;
   line-height: 4vh;
   color: #cccccc;
+  margin-top: 5%;
   
 
 }
@@ -116,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: yellowgreen; */
 }
 .set-contact{
   display: flex;
@@ -224,6 +226,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -5%;
+
 
 }
 .footer-bottom{

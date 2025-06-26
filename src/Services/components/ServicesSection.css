@@ -1,0 +1,68 @@
+.services-section {
+  display: flex;
+  padding: 60px 80px;
+  background-color: #0d0d0e;
+  color: white;
+  flex-wrap: wrap;
+  /* gap: 60px; */
+  margin-top: 10%;
+}
+
+.left-content {
+  flex: 1;
+  min-width: 370px;
+  height: 50vh;
+
+}
+
+.small-heading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+  letter-spacing: 1px;
+}
+
+.left-content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex: 2;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  /* background-color: yellowgreen; */
+}
+
+.service-card {
+  background-color: #0d62ac;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #0d0d0e;
+}
+
+.card-title {
+  color: white;
+  font-weight: 700;
+  padding: 20px 10px;
+  font-size: 20px;
+}

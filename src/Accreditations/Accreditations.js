@@ -1,9 +1,19 @@
+
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+// import ServicesSection from './components/ServicesSection'
+
+
 
 export default function Accreditations() {
   return (
     <div>
-      <h1> this is Accreditations</h1>
+    <Header/>
+    <main>
+      
+    </main>
+    <Footer/>
     </div>
   )
 }
