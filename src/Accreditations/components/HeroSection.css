@@ -1,6 +1,7 @@
-.about-hero {
+
+.Accreditation {
   height: 40vh;
-  background: url('../asstes/about-banner.webp') center center/cover no-repeat;
+  background: url('../assets/accrediation-banner.webp') center center/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
@@ -8,7 +9,8 @@
   margin-bottom: 10%;
   margin-top: 10%;
 }
-.about-hero::before {
+
+.Accreditation::before {
   content: '';
   position: absolute;
   top: 0;
@@ -19,11 +21,11 @@
   z-index: 1;
 }
 
-.hero-text-about {
+.hero-text-Accreditation {
   position: relative;
+  font-size: 6vw;
   z-index: 2;
   color: white;
-  font-size: 5vw;
   padding: 10px 20px;
   display: inline-block;
   margin: 0;
@@ -31,14 +33,15 @@
   text-align: center;
 }
 
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .hero-text {
-    height: 25vh !important;
+  .Accreditation {
+    height: 30vh !important;
     margin-bottom: 10vh;
  
   }
 
-  .hero-text-about {
+  .hero-text-Accreditation {
     font-size: 10vw;
   }
 }

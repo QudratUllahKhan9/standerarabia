@@ -1,14 +1,17 @@
-.about-hero {
-  height: 40vh;
-  background: url('../asstes/about-banner.webp') center center/cover no-repeat;
+
+
+.Feedback-hero{
   position: relative;
+  height: 40vh;
+  background: url('../assets/clients-banner.webp') center center/cover no-repeat;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 8%;
 }
-.about-hero::before {
+
+.Feedback-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -19,7 +22,7 @@
   z-index: 1;
 }
 
-.hero-text-about {
+.hero-text {
   position: relative;
   z-index: 2;
   color: white;
@@ -31,14 +34,26 @@
   text-align: center;
 }
 
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .hero-text {
-    height: 25vh !important;
+  .contact-hero {
+    height: 30vh !important;
     margin-bottom: 10vh;
- 
   }
 
-  .hero-text-about {
+  .hero-text {
     font-size: 10vw;
   }
 }
+
+/* @media (max-width: 480px) {
+  .hero {
+    height: 30vh;
+    margin-bottom: 8vh;
+  }
+
+  .hero-text {
+    font-size: 8vw;
+    padding: 8px 12px;
+  }
+} */

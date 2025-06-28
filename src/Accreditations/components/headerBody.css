@@ -1,0 +1,80 @@
+.accreditation-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.accreditation-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.accreditation-header h1 {
+  color: #004a8d;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.header-line {
+  width: 80px;
+  height: 3px;
+  background-color: #004a8d;
+  margin: 0 auto;
+}
+
+.accreditation-content {
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.branches-section {
+  margin-top: 25px;
+}
+
+.branches-section h3 {
+  color: #004a8d;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.branch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.branch-item {
+  background-color: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #004a8d;
+  border-left: 3px solid #004a8d;
+}
+
+@media (max-width: 768px) {
+  .accreditation-container {
+    padding: 20px 15px;
+  }
+  
+  .accreditation-header h1 {
+    font-size: 28px;
+  }
+  
+  .accreditation-content {
+    font-size: 15px;
+  }
+  
+  .branch-list {
+    gap: 8px 15px;
+  }
+  
+  .branch-item {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

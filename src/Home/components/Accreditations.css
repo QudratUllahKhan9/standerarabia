@@ -63,7 +63,8 @@
   }
 
   .accreditation-item {
-    height: 90px;
+    width: 50vh;
+    height: 180px;
     padding: 8px;
   }
 }
