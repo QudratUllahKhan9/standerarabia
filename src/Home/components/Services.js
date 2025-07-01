@@ -8,6 +8,7 @@ import advanced from '../../components/assets/advanced-conventional-ndt2.webp';
 import marine from '../../components/assets/marine-inspection-services.webp';
 import calibration from '../../components/assets/calibration (1).webp';
 import material from '../../components/assets/material-testing-laboratory.webp';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -42,6 +43,8 @@ const ServiceCard = ({ title, image, variant }) => {
 };
 
 const Services = () => {
+    const navigate = useNavigate();
+  
   return (
     <div className="services-container">
       <section className="services-header">
@@ -62,7 +65,7 @@ const Services = () => {
       </div>
 
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <button className="see-all-btn">
+        <button className="see-all-btn"  onClick={() => navigate('/Services')}>
           View All <span className="arrow">↗</span>
         </button>
       </div>

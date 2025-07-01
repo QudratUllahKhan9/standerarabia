@@ -53,6 +53,7 @@
   font-size: 50px;
 }
 @media (max-width: 600px) {
+  
   .accreditations-left h3 {
     font-size: 1.8rem;
   }
@@ -63,8 +64,9 @@
   }
 
   .accreditation-item {
-    width: 50vh;
-    height: 180px;
-    padding: 8px;
+    width: 43vh;
+    height: 220px;
+    padding: 15px;
+    margin-bottom: 1%;
   }
 }

@@ -26,6 +26,7 @@
   justify-items: center;
   margin-bottom:7%;
     margin-top: 3%;
+   padding: 1%;
      
 
 }
@@ -34,8 +35,8 @@
   background-color: #005b94;
 
   margin-bottom: 10vh;
-  width: 240px;
-  border-radius: 30px 0 30px 0;
+  width: 42vh;
+  border-radius: 30px 0 80px 0;
   color: white;
   font-family: Arial, sans-serif;
   overflow: visible; /* Allow overlap */
@@ -47,8 +48,8 @@
    /* border: 1px solid #ccc; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 10vh;
-  width: 240px;
-  border-radius: 30px 0 30px 0;
+  width: 42vh;
+  border-radius: 30px 0 80px 0;
   color: white;
   font-family: Arial, sans-serif;
   overflow: visible; /* Allow overlap */
@@ -81,7 +82,8 @@
   display: flex;
   justify-content: center;
  align-items: center;
- margin-bottom: 10vh;
+ margin-top: 23%;
+ /* margin-bottom: 10vh; */
 
 }
 
@@ -193,8 +195,8 @@
   }
 
   .service-image {
-    width: 220px;     /* 🔼 Increased from 180px */
-    height: 220px;    /* 🔼 Increased from 180px */
+    width: 300px;     /* 🔼 Increased from 180px */
+    height: 300px;    /* 🔼 Increased from 180px */
   }
 
   .see-all-btn {
@@ -207,7 +209,7 @@
 .service-card-home {
   /* background-color: #005b94; */
 
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
   width: 40vh;
   border-radius: 30px 0 30px 0;
   color: white;
@@ -222,7 +224,7 @@
   padding: 40px 50px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 20px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   font-weight: 100px;
   font-size: 20px;
@@ -253,5 +255,14 @@
   /* text-align: start; */
   text-align: start;
  /* width: 100vh; */
+}
+.service-image-wrapper {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ /* margin-top: 23%; */
+ margin-bottom: 10vh;
+
 }
 }
