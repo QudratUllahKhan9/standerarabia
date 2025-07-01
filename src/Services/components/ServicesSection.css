@@ -40,6 +40,7 @@
   border-radius: 20px;
   overflow: hidden;
   width: 250px;
+  height: 70vh;
   text-align: center;
   transition: transform 0.3s;
   cursor: pointer;

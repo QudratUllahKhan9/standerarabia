@@ -1,6 +1,6 @@
 .inspection-container {
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  background-color: #F8F8F8;
   text-align: center;
 }
 
@@ -25,10 +25,27 @@
   gap: 10px;
   justify-items: center;
   margin-bottom:7%;
+    margin-top: 3%;
+     
+
 }
 
 .service-card-home {
   background-color: #005b94;
+
+  margin-bottom: 10vh;
+  width: 240px;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: visible; /* Allow overlap */
+  position: relative; /* Make child elements use this as reference */
+  padding-top: 120px; /* Give space for the overlapping header */
+}
+.service-card-home:hover {
+  background-color: white;
+   /* border: 1px solid #ccc; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 10vh;
   width: 240px;
   border-radius: 30px 0 30px 0;
@@ -41,13 +58,13 @@
 
 .service-header {
   background-color: #4a4a4a;
-  padding: 20px 50px;
+  padding: 40px 50px;
   border-bottom-left-radius: 30px;
   border-top-right-radius: 20px;
   width: 80%;
   margin: 0 auto;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 100px;
+  font-size: 20px;
   line-height: 1.6;
   white-space: pre-line;
 
@@ -79,12 +96,16 @@
   font-size: 16px;
   color: #0C598F;
   font-weight:normal;
+  margin-top: 6%;
+  margin-bottom: 4vh;
 }
 .services-title{
   font-size: 46px;
   color: #0C598F;
 }
 .services-container{
+  background-color: #F8F8F8;
+ margin-top: 5%;
   padding: 40px;
 }
 .see-all-btn {
@@ -132,16 +153,24 @@
 @media (max-width: 768px) {
   .services-container {
     padding: 20px;
+    margin-top: 10%;
   }
 
   .services-title {
     font-size: 28px;
-    text-align: center;
+    /* text-align: center;
+     */
+
+    text-align: start;
+    margin-bottom: 10%;
+
   }
 
   .services-subtitle {
     font-size: 14px;
-    text-align: center;
+  margin-bottom: 1vh;
+
+    text-align: start;
   }
 
   .services-grid {
@@ -173,4 +202,56 @@
     font-size: 14px;
     margin-top: 30px;
   }
+
+  
+.service-card-home {
+  /* background-color: #005b94; */
+
+  margin-bottom: 10vh;
+  width: 40vh;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: visible; /* Allow overlap */
+  position: relative; /* Make child elements use this as reference */
+  padding-top: 120px; /* Give space for the overlapping header */
+}
+
+.service-header {
+  /* background-color: #4a4a4a; */
+  padding: 40px 50px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 100px;
+  font-size: 20px;
+  line-height: 1.6;
+  white-space: pre-line;
+
+  position: absolute;
+  top: -40px; /* Shift it upward */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.service-card-home:hover {
+  /* background-color: white; */
+   /* border: 1px solid #ccc; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10vh;
+  width: 40vh;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: visible; /* Allow overlap */
+  position: relative; /* Make child elements use this as reference */
+  padding-top: 120px; /* Give space for the overlapping header */
+}
+.services-header{
+  /* background-color: yellowgreen; */
+  /* text-align: start; */
+  text-align: start;
+ /* width: 100vh; */
+}
 }

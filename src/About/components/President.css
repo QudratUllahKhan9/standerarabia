@@ -1,0 +1,59 @@
+.about-container-president {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #f4f8fb;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper-president {
+  flex: 1 1 ;
+  padding: 20px;
+}
+
+.team-image-president {
+  width: 60%;
+  /* border-radius: 60px; */
+  object-fit: cover;
+  border-top-left-radius: 30vh;
+}
+
+.text-section-president {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.about-label-president {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+
+.about-title-president {
+  font-size: 36px;
+  color: #005087;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-description-president {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+  .team-image-president{
+   width: 50vh;
+   border-top-left-radius: 20vh;
+  /* border-radius: 60px; */
+  object-fit: cover;
+  }
+  .text-section-president {
+ 
+  padding: 0px;
+}
+}
