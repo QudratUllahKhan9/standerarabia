@@ -3,7 +3,7 @@ import './HeroSection.css';
 const HeroSection = () => {
   return (
     <section className="contact-hero">
-      <h1 className="hero-text">Contact</h1>
+      <h1 className="contact-hero-text">Contact</h1>
     </section>
   );
 };

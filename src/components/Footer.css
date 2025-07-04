@@ -160,8 +160,18 @@
   padding-left: 5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-
+.li-style,
+.li-style:link,
+.li-style:visited,
+.li-style:hover,
+.li-style:active {
+  text-decoration: none; /* removes underline */
+  color: inherit; /* keeps parent color */
+}
 
 
 

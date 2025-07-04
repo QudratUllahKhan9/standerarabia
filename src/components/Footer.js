@@ -22,17 +22,18 @@ const Footer = () => {
 
         <div className="footer-links">
           <h3>Training Programs</h3>
-          <ul>
-            <li className='footer-test'>IPAF Approved Training Program</li>
-            <li>IADC Approved Training Program</li>
-            <li>OSHA Approved Training Program</li>
-            <li>NEBOSH Approved Training Program</li>
-            <li>TVTC Approved Training Program</li>
-            <li>Rigging & Lifting Training Program</li>
-            <li>First Aid & BLS Training Program</li>
-            <li>IOSH Approved Training Program</li>
-            <li>PASMA Approved Training Program</li>
-          </ul>
+      <ul>
+  <li><a href="#top" className="li-style">IPAF Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">IADC Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">OSHA Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">NEBOSH Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">TVTC Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">Rigging & Lifting Training Program</a></li>
+  <li><a href="#top" className="li-style">First Aid & BLS Training Program</a></li>
+  <li><a href="#top" className="li-style">IOSH Approved Training Program</a></li>
+  <li><a href="#top" className="li-style">PASMA Approved Training Program</a></li>
+</ul>
+
         </div>
 
         <div className="footer-contact" 

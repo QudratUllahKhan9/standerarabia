@@ -2,16 +2,17 @@
 
 .contact-hero {
   position: relative;
-  height: 40vh;
+  height: 45vh;
   background: url('../../Verification/assets/img/contact-banner.webp') center center/cover no-repeat;
   margin-bottom: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+   /* margin-bottom: 10%; */
   margin-top: 8%;
 }
 
-.hero::before {
+.contact-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -22,7 +23,7 @@
   z-index: 1;
 }
 
-.hero-text {
+.contact-hero-text {
   position: relative;
   z-index: 2;
   color: white;
@@ -32,6 +33,7 @@
   margin: 0;
   font-weight: 300;
   text-align: center;
+  justify-content: center;
 }
 
 /* Responsive tweaks */
@@ -41,8 +43,9 @@
     margin-bottom: 10vh;
   }
 
-  .hero-text {
+  .contact-hero-text {
     font-size: 10vw;
+
   }
 }
 
