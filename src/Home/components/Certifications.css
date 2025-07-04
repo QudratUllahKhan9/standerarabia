@@ -1,7 +1,7 @@
 
 .certifications-section {
   background-color: #3a3a3a;
-  padding: 60px 20px;
+  padding: 60px 0px;
   color: white;
   text-align: center;
 }
@@ -30,8 +30,8 @@
 .certificate-card {
   background: white;
   border-radius: 8px;
-  padding: 10px;
-  max-width: 220px;
+  /* padding: 10px; */
+  max-width: 265px;
   width: 100%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
