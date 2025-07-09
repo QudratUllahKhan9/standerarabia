@@ -9,14 +9,18 @@
 
 .image-wrapper-president {
   flex: 1 1 ;
-  padding: 20px;
+  /* padding: 20px; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* background-color: yellowgreen; */
 }
 
 .team-image-president {
   width: 60%;
-  /* border-radius: 60px; */
+  border-radius: 40px;
   object-fit: cover;
-  border-top-left-radius: 30vh;
+  border-top-left-radius: 20vh;
 }
 
 .text-section-president {
@@ -49,8 +53,10 @@
   .team-image-president{
    width: 50vh;
    border-top-left-radius: 20vh;
-  /* border-radius: 60px; */
+  border-radius: 60px;
   object-fit: cover;
+  border-top-left-radius: 30%;
+  padding: 10%;
   }
   .text-section-president {
  

@@ -35,7 +35,7 @@
   width: 3px;
   background: white;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   
 }
 
@@ -43,8 +43,8 @@
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  margin-left: 13%;
-  margin-bottom: 80px;
+  margin-left: 9%;
+  margin-bottom: 120px;
   position: relative;
   width: 100%;
   /* background-color: yellowgreen; */
@@ -71,8 +71,17 @@
 }
 
 .timeline-text {
-  max-width: 250px;
+  max-width: 350px;
+  /* font-size: 30px; */
   text-align: left;
+  /* background-color: yellowgreen; */
+
+}
+.timeline-text h4 {
+  /* max-width: 250px; */
+  font-size: 30px;
+  margin-bottom: 4%;
+  /* text-align: left; */
 }
 
 .left-text {
@@ -86,8 +95,67 @@
 }
 
 .timeline-year {
-  font-size: 36px;
+  font-size: 15vh;
   font-weight: 800;
   color: white;
   min-width: 100px;
+}
+/* For tablets and below (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .timeline-item {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-content, .timeline-text {
+    width: 80vw;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .timeline-text h4 {
+    font-size: 24px;
+  }
+
+  .timeline-year {
+    font-size: 10vh;
+    margin-bottom: 20px;
+  }
+
+  .timeline::before {
+    left: 0;
+    display: none; /* optional: hide the center line for mobile */
+  }
+
+  .left-text,
+  .right-text {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* For mobile phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .timeline-year {
+    font-size: 7vh;
+  }
+
+  .timeline-text h4 {
+    font-size: 20px;
+  }
+
+  .timeline-content {
+    width: 90vw;
+  }
 }

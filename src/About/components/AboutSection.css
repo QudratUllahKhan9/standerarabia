@@ -8,19 +8,22 @@
 }
 
 .image-wrapper {
-  flex: 1 1 400px;
+  flex: 1 1 300px;
   padding: 20px;
 }
 
 .team-image {
   width: 100%;
-  border-radius: 60px;
+  border-radius: 80px;
+  border-top-left-radius: 35%;
   object-fit: cover;
 }
 
 .text-section {
-  flex: 1 1 400px;
-  padding: 20px;
+  flex: 1 1 500px;
+  padding: 10vh;
+  /* width: 100vh; */
+  /* background-color: yellowgreen; */
 }
 
 .about-label {
@@ -28,6 +31,7 @@
   font-size: 14px;
   margin-bottom: 10px;
   letter-spacing: 0.8px;
+  
 }
 
 .about-title {
